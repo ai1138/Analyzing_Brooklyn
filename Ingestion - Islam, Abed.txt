@@ -1,0 +1,32 @@
+On command prompt:
+scp C:/Users/aisla/videos/bigData/project/energy.tsv ai1138@peel.hpc.nyu.edu:/home/ai1138
+
+On HDFS for mapreduce(java):
+hdfs dfs -mkdir files hdfs dfs -mkdir files/input
+hdfs dfs -put energy.tsv files/input
+javac -classpath `yarn classpath` -d . CleanMapper.java
+javac -classpath `yarn classpath`:. -d . Clean.java
+jar -cvf clean.jar *.class
+hadoop jar clean.jar Clean files/input/Energy.tsv /user/ai1138/files/output
+
+HDFS move java output to local:
+hdfs dfs -copyToLocal files/output 
+
+On command prompt: NOTE: I needed to do this so i can turn my output into a tab spaced file after that i moved it back to peel as a file i can use to profile in hive
+scp ai1138@peel.hpc.nyu.edu:\home\ai1138\output\part-r-00000 ~output
+scp C:/Users/aisla/videos/bigData/project/output.txt ai1138@peel.hpc.nyu.edu:/home/ai1138
+
+On HDFS for hive (for my table):
+hdfs dfs -mkdir project
+hdfs dfs -put output.txt project
+hadoop fs -copyFromLocal /home/ai1138/output.txt /user/ai1138/project
+
+On HDFS for hive (for Sheika's table):
+hdfs dfs -mkdir projectShnu
+hdfs dfs -put crashCleaned.csv projectShnu
+hadoop fs -copyFromLocal /home/ai1138/crashCleaned.csv /user/ai1138/projectShnu
+
+On HDFS for hive (for Afnan's table):
+hdfs dfs -mkdir afnanHive
+hdfs dfs -put final_issues.csv afnanHive
+hadoop fs -copyFromLocal /home/ai1138/final_issues.csv /user/ai1138/afnanHive
