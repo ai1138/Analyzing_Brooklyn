@@ -1,8 +1,8 @@
  
 
-[Moving to Brooklyn Paper](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
+Accessing The Paper:
 ===================================================================================================================================================================================
-
+[Moving to Brooklyn Paper](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
 
 ###
 Folder structure:
