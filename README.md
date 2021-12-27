@@ -1,8 +1,10 @@
  
 
 Accessing The Paper:
-===================================================================================================================================================================================
-[Moving to Brooklyn Paper](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
+=================================================================================================================================================================================
+In this project, we were studying the livability and safety of different neighborhoods in Brooklyn. This topic is important to investigate because the neighborhood you live in in New York has a very big impact on the life you live. Therefore, we set out to understand which neighborhoods were highly livable and which were not. Before we started our research, we already had an understanding that many parts of Brooklyn were highly segregated, so we were expecting quite a large variance between different neighborhoods in terms of 311 complaints, energy usage, and automobile accidents. By doing this study, we will further the knowledge that data analysts have regarding urban development in New York and can support urban policy to make the lives of New Yorkers better. We expected that certain zip codes like those in East Flatbush would be far more livable....
+
+[Read the Rest of Moving to Brooklyn Paper](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
 
 ###
 Folder structure:
