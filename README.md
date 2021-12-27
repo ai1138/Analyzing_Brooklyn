@@ -1,5 +1,8 @@
-Where to Read: 
-Moving to Brooklyn Paper [here](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
+ 
+#Accessing the Findings
+[Moving to Brooklyn Paper](https://medium.com/@ai1138/moving-to-brooklyn-8b6748fffcc5)
+
+#Accessing Our Code
 
 Folder structure:
 data_ingest - contains the steps we took to ingest the file to HDFS after downloading the datasets from online sources
